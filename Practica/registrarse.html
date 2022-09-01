@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            height: 50ch;
+
+            outline: 1px solid black;
+
+            align-items: center;
+            justify-content: center;
+
+            background-color: antiquewhite;
+        }
+
+        form input {
+            width: 25%;
+            margin-top: 8px;
+            border: none;
+            border-radius: none;
+            outline: none;
+
+            border-bottom: 1px solid black;
+            background-color: white;
+            padding: 5px 10px 5px 15px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        button {
+            margin-top: 8px;
+            padding: 10px 50px;
+            background-color: whitesmoke;
+            border: none;
+            border-radius: 20px;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            form input {
+                margin-top: 12px;
+                width: 220px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="./registrarseCode.js"></script>
+
+    <form>
+
+        <h2>Registrarse</h2>
+
+        <input type="text" placeholder="Full Name" id="txtFullname">
+        <input type="email" placeholder="Email" id="txtEmail">
+        <input type="password" placeholder="Password" id="txtPassowrd">
+        <input type="password" placeholder="Repete Password" id="txtRepetPassword">
+
+        <button onclick="clickea()">Enviar</button>
+
+    </form>
+
+    
+</body>
+
+</html>

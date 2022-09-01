@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            background-color: cadetblue;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .nav-left ul{
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+        }
+
+        li {
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            list-style: none;
+
+            padding: 5px 20px;
+            border-radius: 10px;
+
+            background-color: white;
+        }
+
+        li:hover {
+            outline: 2px solid black;
+        }
+
+        .nav-right{
+            margin-right: 10px;
+            font-size: 14px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+
+        }
+
+        @media (max-width: 640px) {
+            .nav-left{
+                display: none;
+            }
+        }
+        @media (max-width: 830px) {
+            .nav-right{
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <nav>
+        <img src="" alt="Icon">
+
+        <div class="nav-left">
+            <ul>
+                <li><a href="/">Imagen</a></li>
+                <li><a href="/">Videos</a></li>
+                <li><a href="/">Gif</a></li>
+                <li><a href="/">About me</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <p>ivansandigruttola@gmail.column</p>
+        </div>
+
+    </nav>
+
+</body>
+</html>

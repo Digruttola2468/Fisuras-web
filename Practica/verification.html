@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificacion Grupo</title> 
+
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+        }
+        .header {
+            width: 100%;
+            height: 100vh;
+            
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            width: 400px;
+            height: 400px;
+
+            justify-content: center;
+            align-items: center;
+            
+            border: 4px solid rebeccapurple;
+            border-radius: 10px;
+        }
+
+
+        .itemImagen {
+            width: 150px;
+            height: 150px;
+
+            border: 5px solid black;
+
+            border-radius: 50%;
+        }   
+
+        .container_item {
+            display: flex;
+            flex-direction: column;
+
+            text-align: center;
+            
+            margin-top: 15px;
+        }
+
+        #password {
+            border: none;
+            outline: none;
+
+            margin-top: 6px;
+
+            border: 2px solid rebeccapurple;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        
+        #enviar {
+            border: 4px solid black;
+            outline: none;
+            background-color: white;
+            color: black;
+            padding: 5px;
+            border-radius: 10px;
+            
+        }
+
+        .container_item img {
+            width: 20px;
+            height: 20px;
+            position: relative;
+
+            left: 170px;
+            top: -26px;
+        }
+
+        .itemImagen img {
+            width: 100%;
+        }
+
+        img{
+            user-select: none;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="itemImagen">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="User">
+            
+            </div>
+            <div class="container_item">
+                <label>Password</label>
+                <input type="password" id="password" maxlength="11">
+                <img src="https://iconarchive.com/download/i83709/custom-icon-design/mono-general-4/eye.ico" alt="eye" onclick="mostrarCerrado()">
+                
+                <button onclick="butonTocado()" id="enviar">Enviar</button>
+            </div>
+            
+        </div>
+        
+    </div>
+    
+
+    <script>
+        const eye = document.querySelector(".container_item img");
+        const password = document.querySelector("#password");
+        const botonEnviar = document.querySelector("#enviar");
+
+        let isCloseEye = false;
+        const key = "francoLove";
+
+        botonEnviar.addEventListener("click", butonTocado);
+
+        function mostrarCerrado(){
+            if(isCloseEye){
+                eye.setAttribute("src","https://iconarchive.com/download/i83709/custom-icon-design/mono-general-4/eye.ico");
+                isCloseEye = false;
+                password.setAttribute("type","password");
+            }else{
+                eye.setAttribute("src","https://static.thenounproject.com/png/22249-200.png");
+                password.setAttribute("type","text");
+                isCloseEye = true;
+            }
+        }
+
+        function butonTocado(){
+            let text = password.value;
+            if(text === key){
+                location.href ="./index.html";
+                password.style.borderColor = "GREEN";
+            }else {
+                password.style.borderColor = "RED";
+            }
+        }
+    </script>
+
+</body>
+</html>

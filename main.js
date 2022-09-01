@@ -11,7 +11,7 @@ const containDescrip       = document.querySelector(".containerDescripcion");
                         "vallan a pasacalle porque puede llegar a maltratar personas (puteando golpeando), odia mucho a \n" +
                         "las gordas a pesar que es gordo obeso.";
 
-            image.setAttribute("src","./goorda.png");
+            image.setAttribute("src","./pictures/goorda.png");
             image.setAttribute("alt","Gordaa");
 
             h4.innerText = instagram;
@@ -34,7 +34,7 @@ const containDescrip       = document.querySelector(".containerDescripcion");
                 "no sabe nada este hijo de puta de medicina, encima es pervertido con las mujeres" +
                 "y da recetas para que tengamos mas grasa, una VERGUENZA.";
 
-            image.setAttribute("src","./dukoo.png");
+            image.setAttribute("src","./pictures/dukoo.png");
             image.setAttribute("alt","duky");
 
             h4.innerText = instagram;
@@ -56,7 +56,7 @@ const containDescrip       = document.querySelector(".containerDescripcion");
             let frase = "Viejo de 30 años, acosador de wachas especificamente nazarela flores, si lo ven en auto" +
                         "anda tocando bocina molestando a los del transito.";
 
-            image.setAttribute("src","./lemoo.png");
+            image.setAttribute("src","./pictures/lemoo.png");
             image.setAttribute("alt","lemoo");
 
             h4.innerText = instagram;
@@ -81,7 +81,7 @@ const containDescrip       = document.querySelector(".containerDescripcion");
                 "y no le importa si le tiene que contestar a los directivos. Si lo ven" +
                 "llamen a Nardon.";
 
-            image.setAttribute("src","./brunoo.png");
+            image.setAttribute("src","./pictures/brunoo.png");
             image.setAttribute("alt","bruno");
 
             h4.innerText = instagram;
@@ -104,7 +104,7 @@ const containDescrip       = document.querySelector(".containerDescripcion");
                 "cuando esta enamorado (puede llegar a matar por amor), es odiado por toda la escuela, si lo" +
                 "ven no lo dejen pasar porque es re molesto, no nos deja concentrarnos en clases.";
 
-            image.setAttribute("src","./torre.png");
+            image.setAttribute("src","./pictures/torre.png");
             image.setAttribute("alt","Torres");
 
             h4.innerText = instagram;
@@ -126,7 +126,7 @@ const containDescrip       = document.querySelector(".containerDescripcion");
                 "alterarse si pierde. Por culpa de este juego violento no hace nada en clases, se machetea en " + 
                 "TODAS las pruebas, no hace las tareas, si llega a estudiar (cosa que dudo) estudia el mismo dia." ;
 
-            image.setAttribute("src","./ledesma.png");
+            image.setAttribute("src","./pictures/ledesma.png");
             image.setAttribute("alt","Torres");
 
             h4.innerText = instagram;
@@ -147,7 +147,7 @@ const containDescrip       = document.querySelector(".containerDescripcion");
         function nica(instagram){
             let frase = "Nada para describir a este choro";
 
-            image.setAttribute("src","./nicaa.png");
+            image.setAttribute("src","./pictures/nicaa.png");
             image.setAttribute("alt","Nico");
 
             h4.innerText = instagram;
