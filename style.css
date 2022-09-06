@@ -2,6 +2,26 @@
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
+    padding: 0px;
+}
+
+/*MENU*/
+nav{
+    background-color: wheat;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 10px;
+}
+li,a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+li {
+    margin-right: 20px;
 }
 
 h1 {
