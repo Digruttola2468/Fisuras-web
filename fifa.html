@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA 22</title>
+
+    <style>
+        * {
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        nav {
+            background-color: wheat;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            padding: 10px;
+        }
+
+        li,
+        a {
+            color: black;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            column-gap: 10px;
+        }
+
+        .left img {
+            width: 100%;
+            max-width: 800px;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .right {
+            height: 100%;
+        }
+
+        .top {
+            grid-column: 1 / 3;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 100px);
+
+            justify-content: center;
+            justify-items: center;
+            align-items: baseline;
+        }
+        .top_equipo img {
+            width: 49px;
+        }
+        .top_equipo span{
+            display: block;
+        }
+
+        .footer {
+            grid-column: 1 / 3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                
+                row-gap: 10px;
+                margin: 10px;
+            }
+
+            .left img {
+                width: 340px;
+            }
+
+            .right {
+                height: 100%;
+            }
+
+            .top {
+                grid-column: 1 / 1;
+            }
+
+            .footer {
+                grid-column: 1 / 1;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="">Pasacalle</a></li>
+            <li><a href="">Escrachos</a></li>
+            <li><a href="">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Torneo 05/09/2022</h1>
+        <div class="top">
+            <div class="top_equipo">
+                <img src="./pictures/fifa/logoEquipos/psgLogo.png" alt="">
+                <span>Lemos</span>
+            </div>
+            <div class="top_equipo">
+                <img src="./pictures/fifa/logoEquipos/realMadridLogo.png" alt="">
+                <span>Ivan</span>
+            </div>
+            <div class="top_equipo">
+                <img src="./pictures/fifa/logoEquipos/chelseaLogo.png" alt="">
+                <span>Bustos</span>
+            </div>
+            <div class="top_equipo">
+                <img src="./pictures/fifa/logoEquipos/franceLogo.png" alt="">
+                <span>Ledesma</span>
+            </div>
+            <div class="top_equipo">
+                <img src="./pictures/fifa/logoEquipos/seleccionArgentinaLogo.png" alt="">
+                <span>Gonzales</span>
+            </div>
+            
+        </div>
+        <div class="left">
+            <img src="./pictures/fifa/Torneo1.png" alt="">
+        </div>
+        <div class="right">
+            <table>
+                <tr>
+                    <td>Local</td>
+                    <td>Resultado</td>
+                    <td>Rival</td>
+                </tr>
+                <tr>
+                    <td>Ledesma</td>
+                    <td>4 - 1</td>
+                    <td>Bustos</td>
+                </tr>
+                <tr>
+                    <td>Lemos</td>
+                    <td>2 - 1</td>
+                    <td>Gonzales</td>
+                </tr>
+                <tr>
+                    <td>Ledesma</td>
+                    <td>4 - 2</td>
+                    <td>Gonzales</td>
+                </tr>
+                <tr>
+                    <td>Digru</td>
+                    <td>2 - 3</td>
+                    <td>Bustos</td>
+                </tr>
+                <tr>
+                    <td>Digru</td>
+                    <td>4 - 0</td>
+                    <td>Gonzales</td>
+                </tr>
+                <tr>
+                    <td>Ledesma</td>
+                    <td>3 - 1</td>
+                    <td>Lemos</td>
+                </tr>
+                <tr>
+                    <td>Digru</td>
+                    <td>3 - 1</td>
+                    <td>Lemos</td>
+                </tr>
+                <tr>
+                    <td>Bustos</td>
+                    <td>1 - 0</td>
+                    <td>Gonzales</td>
+                </tr>
+                <tr>
+                    <td>Bustos</td>
+                    <td>1 - 3</td>
+                    <td>Lemos</td>
+                </tr>
+                <tr>
+                    <td>Ivan</td>
+                    <td>2 - 1</td>
+                    <td>Ledesma</td>
+                </tr>
+                <tr>
+                    <td>Ivan</td>
+                    <td>0 - 1</td>
+                    <td>Lemos</td>
+                </tr>
+                <tr>
+                    <td>Bustos</td>
+                    <td>2 - 3</td>
+                    <td>Gonzales</td>
+                </tr>
+                <tr>
+                    <td>Ivan</td>
+                    <td>2 - 1</td>
+                    <td>Gonzales</td>
+                </tr>
+                <tr>
+                    <td>Lemos</td>
+                    <td>4 - 3</td>
+                    <td>Ledesma</td>
+                </tr>
+                <tr>
+                    <td>Lemos</td>
+                    <td>2 - 2</td>
+                    <td>Bustos</td>
+                </tr>
+                <tr>
+                    <td>Ledesma</td>
+                    <td>6 - 2</td>
+                    <td>Ivan</td>
+                </tr>
+                <tr>
+                    <td>Ledesma</td>
+                    <td>6 - 3</td>
+                    <td>Gonzales</td>
+                </tr>
+
+                <tr>
+                    <td>Ivan</td>
+                    <td>1 - 0</td>
+                    <td>Bustos</td>
+                </tr>
+                <tr>
+                    <td>Ledesma</td>
+                    <td>2 - 1</td>
+                    <td>Bustos</td>
+                </tr>
+                <tr>
+                    <td>Lemos</td>
+                    <td>3 - 3</td>
+                    <td>Gonzales</td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer"></div>
+    </div>
+
+</body>
+
+</html>
