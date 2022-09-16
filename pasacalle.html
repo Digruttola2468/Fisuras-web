@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasacalle</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        nav {
+            background-color: wheat;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            padding: 10px;
+        }
+
+        li,
+        a {
+            color: black;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 400px);
+
+            gap: 10px;
+
+            margin: 10px;
+        }
+
+        video {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./fifa.html">FIFA</a></li>
+            <li><a href="">Escrachos</a></li>
+            <li><a href="./cumple.html">Cumpleaños</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <video src="./pictures/pasacalle/VID_20220619_034843.mp4" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Does not support the video tag.
+        </video>
+    
+        <video src="./pictures/pasacalle/VID_20220703_035704.mp4" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Does not support the video tag.
+        </video>
+    </main>
+    
+
+</body>
+</html>
